@@ -1,0 +1,39 @@
+---
+title: "Train to data-analysis"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: rows
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+source("code/from-excel-to-r.R", encoding = "UTF-8", local = TRUE)
+```
+
+# Global
+
+### Monthly Revenue Trend
+
+```{r}
+source("code/from-excel-to-r-plot.R", encoding="utf-8", local = TRUE)
+xwMOOCRevPlot
+```
+
+# Korea
+
+Column {data-width=400}
+---------------------------------------------------------------------------------------
+
+### Second Plot
+
+```{r}
+source("code/from-excel-to-r-plot.R", encoding="utf-8", local = TRUE)
+xwMOOCRevPlot
+```
+
+### Third Plot
+
+```{r}
+source("code/from-excel-to-r-plot.R", encoding="utf-8", local = TRUE)
+xwMOOCRevPlot
+```
