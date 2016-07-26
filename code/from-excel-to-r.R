@@ -14,7 +14,9 @@ if (length(new.pkgs)) install.packages(new.pkgs,  repos = "http://cran.us.r-proj
 if(any(Sys.info() == "Windows")) {
   setwd("D:/webzen/fromexcel2r")
 }
-#setwd("/Users/statkclee/Dropbox/02-webzen/dashboard")
+if(any(Sys.info() == "Darwin")) {
+  setwd("/Users/statkclee/swc/fromexcel2r")
+}
 
 ##==========================================================================================================
 ## 01. 데이터 가져오기
